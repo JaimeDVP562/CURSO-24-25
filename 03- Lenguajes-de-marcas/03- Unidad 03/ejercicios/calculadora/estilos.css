@@ -10,6 +10,7 @@ body {
   background-color: #f4f4f4;
   flex-direction: column;
 }
+
 header {
   display: flex;
   flex-direction: column;
@@ -20,6 +21,7 @@ main {
   flex: 1;
   padding: 0 2rem 2rem 2rem;
 }
+
 footer {
   display: flex;
   flex-direction: column;
@@ -30,38 +32,47 @@ footer {
   padding: 1rem 0;
 }
 
-header div{
-    justify-content: center;
+header div {
+  justify-content: center;
 }
-.sumar{
-    background-color: green;
-    border-radius: 10%;
+
+.sumar {
+  background-color: green;
+  border-radius: 10%;
 }
-.resultadoSuma{
-    color: green;
+
+.resultadoSuma {
+  color: green;
 }
-.restar{
-    background-color:red;
-    border-radius: 10%;
+
+.restar {
+  background-color: red;
+  border-radius: 10%;
 }
-.resultadoResta{
-    color: red;
+
+.resultadoResta {
+  color: red;
 }
-.multiplicar{
-    background-color:blue;
-    border-radius: 10%;
+
+.multiplicar {
+  background-color: blue;
+  border-radius: 10%;
 }
-.resultadoMultiplicacion{
-    color: blue;
+
+.resultadoMultiplicacion {
+  color: blue;
 }
-.dividir{
-    background-color:orange;
-    border-radius: 10%;
+
+.dividir {
+  background-color: orange;
+  border-radius: 10%;
 }
-.resultadoDivision{
-    color: orange;
+
+.resultadoDivision {
+  color: orange;
 }
-.calculadora{
-justify-items: center;
+
+.calculadora {
+  justify-items: center;
 
 }
