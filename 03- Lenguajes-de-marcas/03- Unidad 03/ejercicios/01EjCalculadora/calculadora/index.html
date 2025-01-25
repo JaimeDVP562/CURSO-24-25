@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css">
+        <title>Calculadora con javascript</title>
+    </head>
+
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <div class="calculadora">
+                <fieldset>
+
+                    <legend>
+                        <h2>Calculadora</h2>
+                    </legend>
+                    <div class="calculadora">
+
+                        <input id="numero1" class="camposNumericos"
+                            placeholder="Número 1" required>
+
+                        
+                            <input id="numero2" class="camposNumericos"
+                                placeholder="Número 2" required>
+                        
+                        <div>
+                            <button class="sumar botones"
+                                onclick="suma()">Sumar</button>
+                            <button class="restar botones"
+                                onclick="resta()">Restar</button>
+                            <button class="multiplicar botones"
+                                onclick="multiplicacion()">Multiplicar</button>
+                            <button class="dividir botones"
+                                onclick="division()">Dividir</button>
+
+                            <p id="resultado" class="resultadoOperaciones"></p>
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+
+    <!--Script -->
+    <script src="js/javascript.js"> </script>
+
+</html>
