@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+
+        let mes =[12];
+
+        mes[0]= "Enero";
+        mes[1]= "Febrero";
+        mes[2]= "Marzo";
+        mes[3]= "Abril";
+        mes[4]= "Mayo";
+        mes[5]= "Junio";
+        mes[6]= "Julio";
+        mes[7]= "Agosto";
+        mes[8]= "Septiembre";
+        mes[9]= "Octubre";
+        mes[10]= "Noviembre";
+        mes[11]= "Diciembre";
+
+        // document.write("Los meses del año son " + mes[0] + ", " + mes[1]+ ", " + mes[2]+ ", " + mes[3]+ ", " + mes[4]+ ", " + mes[5]+ ", " + mes[6]+ ", " + mes[7]+ ", " + mes[8]+ ", " + mes[9]+ ", " + mes[10]+ ", " + mes[11]);
+        
+        document.write("\t")
+
+        // Se muestran los meses con un switch case
+            let variableMes = 12;
+
+            switch (variableMes) {
+                case 0:
+                    document.write(mes[0]);
+                    break;
+                    case 1:
+                    document.write(mes[1]);
+                    break;
+                    case 2:
+                    document.write(mes[2]);
+                    break;
+                    case 3:
+                    document.write(mes[3]);
+                    break;
+                    case 4:
+                    document.write(mes[4]);
+                    break;
+                    case 5:
+                    document.write(mes[5]);
+                    break;
+                    case 6:
+                    document.write(mes[6]);
+                    break;
+                    case 7:
+                    document.write(mes[7]);
+                    break;
+                    case 8:
+                    document.write(mes[8]);
+                    break;
+                    case 9:
+                    document.write(mes[9]);
+                    break;
+                    case 10:
+                    document.write(mes[10]);
+                    break;
+                    case 11:
+                    document.write(mes[11]);
+                    break;
+            
+                default:
+                    document.write("Error el mes introducido es incorrecto")
+                    break;
+            }
+
+        </script>
+
+    </body>
+</html>

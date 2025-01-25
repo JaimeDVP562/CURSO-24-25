@@ -1,0 +1,208 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    /* Elimina el margen por defecto de todos los elementos */
+    box-sizing: border-box;
+    /* Asegura que el padding y los bordes no aumenten el ancho/alto total del elemento */
+}
+
+/* Contenido principal */
+main {
+    flex: 1;
+    /* Hace que el contenido de la etiqueta main crezca para llenar el espacio disponible ¡¡¡IMPORTANTE!!!*/
+    padding: 0 2rem 2rem 2rem;
+    /* Añade un relleno de 2rem alrededor del contenido principal */
+}
+
+/* Estilos del cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    /* Define la fuente principal de la página */
+    line-height: 1.6;
+    /* Establece la altura de línea (espacio entre líneas de texto) */
+    background-color: #F4F4F4;
+    /* Aplica un color de fondo claro al cuerpo de la página */
+    color: #333;
+    /* Aplica color al texto*/
+    margin: 0%;
+    /* Elimina los margenes en el cuerpo de la pagina */
+    padding: 0%;
+    /* Aplica relleno al cuerpo*/
+    display: flex;
+    /* Utiliza Flexbox para alinear los elementos de la lista en una fila */
+    flex-direction: column;
+    /* Alinea los hijos (cabecera, navegación, etc.) verticalmente */
+    min-height: 100vh;
+    /* Asegura que la altura mínima de la página sea la del viewport (pantalla) */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #333;
+    /* Establece un color de fondo azul para la cabecera */
+    color: white;
+    /* Define el color del texto de la cabecera como blanco */
+    padding: 20px;
+    /* Añade un relleno (espacio) de 20px */
+    text-align: center;
+    /* Alinea al centro el texto de la cabecera */
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    /* Aplica el mismo color azul de la cabecera al pie de página */
+    color: white;
+    /* Establece el color del texto del pie de página en blanco */
+    text-align: center;
+    /* Centra el texto en el pie de página */
+    padding: 10px 0;
+    /* Añade un relleno vertical de 10px al pie de página */
+    margin-top: 40px;
+}
+
+header h1 {
+    margin: 0%;
+    /* Elimina los margenes en la cabecera de la pagina */
+    font-size: 2em;
+    /* Tamaño de fuente*/
+}
+
+.menu-navegacion {
+    padding: 0%;
+    /* Aplica relleno*/
+    color: white;
+    /* Aplica color al texto*/
+    font-weight: bold;
+    /* Color negrita para las letas*/
+    text-decoration: none;
+    /* Aplica que los enlaces no estén subrayados*/
+    display: flex;
+    /* Utiliza flexbox*/
+    flex-direction: row;
+    /* Aplica la direccion de los elementos en fila*/
+    justify-content: center;
+    /* Alinea horizontalmente */
+    align-items: center;
+
+
+}
+
+header nav ul li {
+    display: inline-block;
+    /* Alinea los elementos en una fila uno al lado de otro*/
+    justify-items: center;
+    margin: 0 15px;
+}
+
+
+.menu-navegacion ul li a {
+    color: white;
+    /* Define el color del texto de la cabecera como blanco */
+    list-style-type: none;
+    /* Aplica a la lista el estilo que hace que no salgan los puntos de la lista */
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+
+}
+
+.menu-navegacion ul li a:hover {
+    text-decoration: underline;
+    /* Subraya los enlaces conforme pasemos el  cursor por encima */
+}
+
+
+.contenedor-mapas {
+    margin: 20px auto;
+    /* Aplica margen centrado horizontalmente*/
+    width: 1200px;
+    /* Aplica ancho maximo*/
+    display: flex;
+    /* Utiliza Flexbox para alinear los elementos de la lista en una fila */
+    flex-direction: column;
+    /* Alinea los hijos (cabecera, navegación, etc.) verticalmente */
+    gap: 40px;
+    /* Separación entre elementos*/
+    padding: 20px;
+    /* Relleno*/
+}
+
+.map-card {
+    background-color: white;
+    /* Color de fondo*/
+    border-radius: 15px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Aplica sombra*/
+    padding: 20px;
+    /* Relleno*/
+    text-align: center;
+    /* Texto centrado*/
+    display: flex;
+    /* Utiliza Flexbox para alinear los elementos de la lista en una fila */
+    flex-direction: column;
+    /* Alinea los hijos (cabecera, navegación, etc.) verticalmente */
+
+}
+
+.map-card div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* Alinea horizontalmente */
+    align-items: center;
+    /* Aplica la direccion de los elementos en fila*/
+
+}
+
+.map-card div h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10ox;
+    /* Altura completa de la ventana */
+}
+
+.map-card div img {
+    justify-content: center;
+    /* Alinea horizontalmente */
+    align-items: center;
+    width: 150px;
+    /* Ancho de la imagen*/
+    height: auto;
+    /* Altura automatica*/
+    margin-left: 10px;
+    /* Margen izquierdo*/
+}
+
+.nueva-york {
+    font-family: 'Roboto', sans-serif;
+}
+
+.los-angeles {
+    font-family: 'Monserrat', sans-serif;
+}
+
+.londres {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.mapa {
+    width: 100%;
+    /* Anchura*/
+    height: 400px;
+    /* Altura*/
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Sombra*/
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    font-size: 1.1rem;
+    color: #555;
+}

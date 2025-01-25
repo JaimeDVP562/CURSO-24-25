@@ -1,0 +1,87 @@
+/* Estilos globales */
+* {
+    margin: 0; /* Elimina el margen por defecto de todos los elementos */
+    box-sizing: border-box; /* Asegura que el padding y los bordes no aumenten el ancho/alto total del elemento */
+}
+
+/* Contenido principal */
+main {
+    flex: 1; /* Hace que el contenido de la etiqueta main crezca para llenar el espacio disponible ¡¡¡IMPORTANTE!!!*/
+    padding: 0 2rem 2rem 2rem; /* Añade un relleno de 2rem alrededor del contenido principal */
+}
+
+/* Estilos del cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif; /* Define la fuente principal de la página */
+    line-height: 1.6; /* Establece la altura de línea (espacio entre líneas de texto) */
+    background-color: #F4F4F4; /* Aplica un color de fondo claro al cuerpo de la página */
+    display: flex; /* Utiliza Flexbox para alinear los elementos de la lista en una fila */
+    flex-direction: column; /* Alinea los hijos (cabecera, navegación, etc.) verticalmente */
+    min-height: 100vh; /* Asegura que la altura mínima de la página sea la del viewport (pantalla) */
+    margin: 0%; /* Elimina los margenes en el cuerpo de la pagina */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #4CAF50; /* Establece un color de fondo azul para la cabecera */
+    color: white; /* Define el color del texto de la cabecera como blanco */
+    text-align: center; /* Alinea al centro el texto de la cabecera */
+    padding: 1.5rem 0; /* Añade un relleno (espacio) vertical de 1.5rem arriba y abajo */
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #4CAF50; /* Aplica el mismo color azul de la cabecera al pie de página */
+    color: white; /* Establece el color del texto del pie de página en blanco */
+    text-align: center; /* Centra el texto en el pie de página */
+    padding: 1rem 0; /* Añade un relleno vertical de 1rem al pie de página */
+    font-size: 0.9rem; /* Define un tamaño de fuente más pequeño para el texto del pie de página */
+}
+.cabecera-imagen{
+    display: flex;
+    justify-content: center;
+}
+.cabecera-imagen img{
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+}
+h1,h2 {
+    text-align: center;
+}
+.contenedor-tarjetas-productos{
+   display: grid;       /* Layout en forma de matriz */
+   width: 100%;
+   padding: 10px;
+   text-align: center;
+}
+/* Declaramos el estilo del contenedor grid que contiene las tarjetas  */
+.grid-container-4x4 {
+    display: grid; /* Layout en forma de matriz */
+    grid-template-columns: repeat(4, 1fr); /* Cambiar a 4 columnas */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+/* Declaramos el estilo de la tarjeta  */
+.tarjeta {
+    background-color: #F9F9F9;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #CCC;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 300px;
+}
+
+.tarjeta img{
+    width: 75%; /* Define un ancho máximo del 75% */
+}
+.tarjeta h2{
+    color: #333 /* Color del texto de la tarjeta  */
+}
+.descripcion-producto{
+    color: #777;        /* Color del descripcion de la tarjeta  */
+}
+.precio{
+    color:#E74C3C;  /* Color del precio de la tarjeta  */
+}

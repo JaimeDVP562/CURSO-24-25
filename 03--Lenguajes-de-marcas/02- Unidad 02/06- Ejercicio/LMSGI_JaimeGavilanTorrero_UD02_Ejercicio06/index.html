@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Página básica con HTML5 y CSS3">
+    <meta name="author" content="Jaime Gavilán Torrero">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Mapas embebidos con iframe</title>
+    <!-- Importar fuentes de Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&family=Oswald:wght@400;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Mapas embebidos con iframe</h1>
+            <nav class="menu-navegacion">
+                <ul>
+                    <li><a href="#id-nueva-york">Nueva York</a></li>
+                    <li><a href="#id-los-angeles">Los Ángeles</a></li>
+                    <li><a href="#id-londres">Londres</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <div class="contenedor-mapas">
+            <div class="map-card" id="id-nueva-york">
+                <div>
+                    <h2 class="nueva-york">Nueva York</h2>
+                    <img src="imgenes/nueva_york.png" alt="londres">
+                </div>
+                <iframe class="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d281822.86154223647!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York%2C%20EE.%20UU.!5e1!3m2!1ses!2ses!4v1731761665047!5m2!1ses!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="descripcion">Nueva York es la ciudad mas poblada de Estados Unidos, famosa por su Estatua de
+                    la Libertart y Times Square. </p>
+            </div>
+            <div class="map-card" id="id-los-angeles">
+                <div>
+                    <h2 class="los-angeles">Los Ángeles</h2>
+                    <img src="imgenes/los_angeles.png" alt="los-angeles">
+                </div>
+                <iframe class="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d308093.93433859607!2d-118.41173249999999!3d34.020479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e1!3m2!1ses!2ses!4v1731761938099!5m2!1ses!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="descripcion">Los Ángeles es conocida por ser el centro de la industria cinematográfica de los
+                    Estados Unidos, hogar de Hollywood.</p>
+            </div>
+            <div class="map-card" id="id-londres">
+                <div>
+                    <h2 class="londres">Londres</h2>
+                    <img src="imgenes/londres.png" alt="londres">
+                </div>
+                <iframe class="mapa"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.8308410644531251%2C51.18106473752023%2C0.31173706054687506%2C51.795876566186834&amp;layer=mapnik"
+                    style="border: 1px solid black"></iframe><small><a
+                        href="https://www.openstreetmap.org/#map=10/51.4895/-0.2596">Ver el mapa más grande</a></small>
+                <p class="descripcion">Londres, capital de Reino Unido, es famosa por lugares icónicos como el Big Ben y
+                    el palacio de Buckingham. </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

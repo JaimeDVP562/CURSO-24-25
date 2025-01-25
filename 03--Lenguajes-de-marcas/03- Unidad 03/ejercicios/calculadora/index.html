@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <div class="calculadora">
+                <fieldset>
+
+                    <legend>
+                        <h2>Calculadora</h2>
+                    </legend>
+                    <div>
+                        <input id="numero1"
+                            placeholder="Introduzca el número" required>
+                    </div>
+                    <div>
+                        <input id="numero2"
+                            placeholder="Introduzca el número" required>
+                    </div>
+                    <div>
+                        <button class="sumar" onclick="suma()">Sumar</button>
+                        <button class="restar" onclick="resta()">Restar</button>
+                        <button class="multiplicar"
+                            onclick="multiplicacion()">Multiplicar</button>
+                        <button class="dividir"
+                            onclick="division()">Dividir</button>
+
+                        <p id="resultado"></p>
+                    </div>
+
+                </fieldset>
+
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+
+    <!--Script -->
+    <script src="js/javascript.js"> </script>
+
+</html>

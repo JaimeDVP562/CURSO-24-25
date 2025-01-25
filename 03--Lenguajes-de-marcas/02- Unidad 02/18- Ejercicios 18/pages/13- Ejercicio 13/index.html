@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta name="description" content="Página básica con HTML5 y CSS3">
+            <meta name="author" content="Jaime Gavilan Torrero">
+            <link rel="stylesheet" href="estilos.css">
+            <title>Incidencia de clase</title>
+    </head>
+    <body>
+        <header>
+            <div class="div-centrado">
+                <img class="img-grande" src="imagen/IAT-LOGOTIPO.jpg" alt="logotipo-alanturing">
+            </div>
+            
+        </header>
+    
+        <main>
+            <form>
+                <fieldset>
+
+                    <legend>Nueva incidencia</legend>
+                    <div class="elemento-formulario">
+                        <label for="nombre">Profesor *:</label>
+                        <input type="text"  name="nombre" placeholder="Escribe tu nombre aqui" required >
+                    </div>
+
+                    <div class="elemento-formulario">
+                        <label for="email">Correo Electrónico *:</label>
+                        <input type="email"  name="email" placeholder="Escribe tu correo aqui" required>
+                    </div>
+
+                    <div class="elemento-formulario">
+                        <label for="departamento">Departamento *:</label>
+                        <select  name="departamento[]" required>
+                            <option value="informatica">Informática</option>
+                            <option value="matematicas">Matemáticas</option>
+                            <option value="ciencias">Ciencias</option>
+                            <option value="historia">Historia</option>
+                            <option value="idiomas">Idiomas</option>
+                            <option value="educacion_fisica">Educación Física</option>
+                        </select><br>
+                    </div>
+
+                    <div class="elemento-formulario">
+                        <label for="aula">Aula *:</label>
+                        <input type="text"  name="aula" placeholder="Indica aqui el aula de la incidencia." required>
+                    </div>
+
+                    <div class="elemento-formulario">
+                        <label for="fecha_nacimiento">Dia de la incidencia *:</label>
+                        <input type="week"  name="fecha_nacimiento">
+                    </div>
+            
+                    <div class="elemento-formulario">
+                        <label for="hora_cita">Hora de la incidencia *:</label>
+                        <input type="time"  name="hora_cita">
+                    </div>
+
+                    <div class="elemento-formulario">
+                        
+                        <label for="comentarios">Descripcion de la incidencia *:</label>
+                        <textarea class="" name="comentarios"></textarea>
+                    </div>
+                    
+                    <div class="elemento-formulario" >
+                        <label for="archivo">Imagen de la incidencia (opcional):</label>
+                        <input type="file" name="archivo">
+                    </div>
+                        
+                    <div class="boton-centrado">
+                            <button type="submit">Enviar incidencia</button>
+                            <button type="submit">Borrar formulario</button>
+                    </div>
+                </fieldset>
+            </form>
+            
+        </main>
+        <footer>
+            <h3>Síguenos</h3>
+            <a href="https://www.facebook.com/cpifpalanturing/" target="_blank">
+                <img class="img-pequeña" src="imagen/icons8-facebook-48.png" alt="icons8-facebook-48">
+            </a>
+            <a href="https://x.com/cpifpalanturing/status/1717913064513647005" target="_blank">
+                <img class="img-pequeña" src="imagen/icons8-twitter-48.png" alt="icons8-twitter-48">
+            </a>
+            <a href="https://www.instagram.com/cpifpalanturing/" target="_blank">
+                <img class="img-pequeña" src="imagen/icons8-instagram-48.png" alt="icons8-instagram-48">
+            </a>
+            <a href="https://www.youtube.com/channel/UCWMTHvA1A_lKIzm6-DwZAJA" target="_blank">
+                <img class="img-pequeña" src="imagen/icons8-youtube-48.png" alt="icons8-youtube-48">
+            </a>
+            <a href="https://fpalanturing.es/" target="_blank">
+                <img class="img-pequeña" src="imagen/icons8-website-48.png" alt="icons8-website-48">
+            </a>
+        </footer>
+    </body>
+</html>
+ 

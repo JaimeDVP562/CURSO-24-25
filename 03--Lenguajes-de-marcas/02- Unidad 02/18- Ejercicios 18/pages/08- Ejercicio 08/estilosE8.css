@@ -1,0 +1,28 @@
+.formato-texto {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.table{
+    border-style: solid;
+    border-color: #5ec717;
+    border: solid 1px;
+    width: 100%;
+    text-align: center;
+
+}
+thead{
+    background-color: #5ec717;
+    padding: 0%;
+    margin: 0%;
+}
+.td,th,tr {
+    padding: 0%;
+    margin: 0%;
+}
+.plan-recomendado{
+    border: solid #5ec717;
+    margin: 0%;
+}

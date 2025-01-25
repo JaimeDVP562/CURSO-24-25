@@ -1,0 +1,67 @@
+* {
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #e94c2c;
+}
+
+main {
+  flex: 1;
+  padding: 0 2rem 2rem 2rem;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e94c2c;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+header div{
+    justify-content: center;
+}
+.sumar{
+    background-color: green;
+    border-radius: 10%;
+}
+.resultadoSuma{
+    color: green;
+}
+.restar{
+    background-color:red;
+    border-radius: 10%;
+}
+.resultadoResta{
+    color: red;
+}
+.multiplicar{
+    background-color:blue;
+    border-radius: 10%;
+}
+.resultadoMultiplicacion{
+    color: blue;
+}
+.dividir{
+    background-color:orange;
+    border-radius: 10%;
+}
+.resultadoDivision{
+    color: orange;
+}
+.calculadora{
+justify-items: center;
+
+}

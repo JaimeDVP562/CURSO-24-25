@@ -1,0 +1,48 @@
+.formato-texto {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+}
+body{
+    border: 10Px solid white;
+    
+}
+h1{ 
+    color: black;
+    padding-left: 2%;
+}
+h2{
+    color: black;
+    padding-left: 2%;
+    text-align: center;
+}
+
+h3{
+    color: black;
+    padding-left: 2%;
+    text-align: center;
+}
+
+h4{
+    color: red;
+    padding-left: 2%;
+    text-align: center;
+}
+
+.producto-tipo{
+    border-style: solid;
+    border-color: #d9d9cc;
+    border-radius: 3%;
+    width: 100%;
+    
+}
+img{
+    width: 100%;
+}
+footer{
+    background-color: #5ca6cb;
+}
+.precio-rojo{
+    color: red;
+}

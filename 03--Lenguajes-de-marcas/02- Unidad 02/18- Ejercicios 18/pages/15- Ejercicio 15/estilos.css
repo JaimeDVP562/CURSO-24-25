@@ -1,0 +1,53 @@
+/* Estilos globales */
+* {
+    margin: 0; /* Elimina el margen por defecto de todos los elementos */
+    box-sizing: border-box; /* Asegura que el padding y los bordes no aumenten el ancho/alto total del elemento */
+}
+
+/* Estilos del cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif; /* Define la fuente principal de la página */
+    /*line-height: 1; /*---1.6; ---/* Establece la altura de línea (espacio entre líneas de texto) --------IMPORTANTE--------*/ 
+    background-color: #f4f4f9; /* Aplica un color de fondo claro al cuerpo de la página */
+    display: flex; /* Utiliza Flexbox para alinear los elementos de la lista en una fila */
+    flex-direction: column; /* Alinea los hijos (cabecera, navegación, etc.) verticalmente */
+    min-height: 100vh; /* Asegura que la altura mínima de la página sea la del viewport (pantalla) */
+    color: #333;
+}
+
+/* Estilos del encabezado */
+header {
+    color: white; /* Define el color del texto de la cabecera como blanco */
+    text-align: center; /* Alinea al centro el texto de la cabecera */
+    padding: 0rem 0; /* Añade un relleno (espacio) vertical de 1.5rem arriba y abajo */
+    
+}
+
+/* Contenido principal */
+main {
+    flex: 1; /* Hace que el contenido de la etiqueta main crezca para llenar el espacio disponible ¡¡¡IMPORTANTE!!!*/
+    background-color: white;
+    margin: 1px 4px 4px 4px; /*establece un margen uniforme de 4 píxeles en los cuatro lados (arriba, derecha, abajo, izquierda) de un elemento*/
+
+}
+
+/* Estilos del pie de página */
+footer {
+    color: white; /* Establece el color del texto del pie de página en blanco */
+    text-align: center; /* Centra el texto en el pie de página */
+    padding: 0.5rem 0; /* Añade un relleno vertical de 1rem al pie de página */
+    font-size: 0.9rem; /* Define un tamaño de fuente más pequeño para el texto del pie de página */
+}
+
+video{
+    width: 400px;
+    margin-top: 6px;
+}
+.div-centrado{/* CENTRA UN DIV*/
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    
+}

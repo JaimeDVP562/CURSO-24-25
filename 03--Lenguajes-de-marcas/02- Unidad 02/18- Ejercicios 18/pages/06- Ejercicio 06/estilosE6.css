@@ -1,0 +1,37 @@
+.formato-texto {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+}
+body{
+    border: 10Px solid white;
+    
+}
+h1{ 
+    color: black;
+    padding-left: 3%;
+}
+h2{
+    color: black;
+    padding-left: 3%;
+
+}
+.formato-caja-1 {
+    background-color: #5ca6cb;
+    margin-top: 20px;
+    margin-right: 0px;
+    height: 80%;
+    width: 100%;
+    text-align: center;
+}
+.formato-caja-2 {
+    margin-top: 20px;
+    margin-right: 0px;
+    width: 100%;
+    text-align: center;
+    background-color:white;
+}
+footer{
+    background-color: #5ca6cb;
+}

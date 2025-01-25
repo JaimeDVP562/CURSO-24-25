@@ -1,0 +1,54 @@
+
+
+-- Ejercicio 01
+--CREATE DATABASE TallerMecanico;
+
+-- Ejercicio 02. Crea una base de datos para la sucursal A del taller llamada TallerMecanico_SucursalA.
+--CREATE DATABASE TallerMecanico_SucursalA;
+
+-- Ejercicio 03. El taller ha decidido cerrar la sucursal A. Elimina la base de datos TallerMecanico_SucursalA
+-- DROP DATABASE TallerMecanico_SucursalA;
+
+
+--Ejercicio 04. Crea una base de datos para almacenar los respaldos de la información del taller llamada TallerMecanico_Respaldo.
+--CREATE DATABASE TallerMecanico_Respaldo;
+
+
+--Ejercicio 05. Renombra la base de datos TallerMecanico_Respaldo a TallerMecanico_Backup.
+--ALTER TABLE TallerMecanico_Respaldo
+--MODIFY NAME = tienda;
+
+
+--Ejercicio 06. : Crea una base de datos para la sucursal B del taller llamada TallerMecanico_SucursalB.
+--CREATE DATABASE TallerMecanico_SucursalB;
+
+
+--Ejercicio 07. El taller ha decidido que ya no necesita la base de datos de respaldo. Elimina la base de datos TallerMecanico_Backup.
+--DROP DATABASE TallerMecanico_Backup;
+
+
+--Ejercicio 08. Crea una base de datos llamada TallerMecanico_Almacen que será utilizada para gestionar el inventario de piezas.
+--CREATE DATABASE TallerMecanico_Almacen;
+
+
+--Ejercicio 09. El taller quiere que la base de datos TallerMecanico_Almacen tenga un nombre más claro. Renombra la base de datos a TallerMecanico_Inventario.
+--ALTER TABLE TallerMecanico_Almacen
+--MODIFY NAME = TallerMecanico_Inventario;
+
+
+--Ejercicio 10. El taller ha decidido cerrar la sucursal B. Elimina la base de datos TallerMecanico_SucursalB.
+--DROP DATABASE TallerMecanico_SucursalB;
+
+
+--Ejercicio 11. Comprueba mediante SQL que todas las bases de datos que has creado existen en el sistema.
+
+--Comprobamos todas las bases de datos que tengamos 
+ --SELECT name FROM sys.databases;
+
+
+--Comprobamoos una a una las base de datos que hemos creado
+
+-- SELECT name FROM sys.databases WHERE name = 'TallerMecanico';
+-- SELECT name FROM sys.databases WHERE name = 'TallerMecanico_Respaldo';
+-- SELECT name FROM sys.databases WHERE name = 'tienda';
+-- SELECT name FROM sys.databases WHERE name = 'TallerMecanico_Inventario';

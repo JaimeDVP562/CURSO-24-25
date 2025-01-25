@@ -1,0 +1,352 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    /* Elimina el margen por defecto de todos los elementos */
+    box-sizing: border-box;
+    /* Asegura que el padding y los bordes no aumenten el ancho/alto total del elemento */
+}
+
+/* Estilos del cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    /* Define la fuente principal de la página */
+    line-height: 1.6;
+    /* Establece la altura de línea (espacio entre líneas de texto) */
+    background-color: #F9F9F9;
+    /* Aplica un color de fondo al cuerpo de la página */
+    color: #333;
+    /* Aplica color al texto*/
+    margin: 0%;
+    /* Elimina los margenes en el cuerpo de la pagina */
+    padding: 0%;
+    /* Aplica relleno al cuerpo*/
+    display: flex;
+    /* Utiliza Flexbox para alinear los elementos */
+    flex-direction: column;
+    /* Alinea los hijos (cabecera, navegación, etc.) verticalmente */
+    min-height: 100vh;
+    /* Asegura que la altura mínima de la página sea la del viewport (pantalla) */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #FF0000;
+    /* Establece un color de fondo para la cabecera */
+    color: white;
+    /* Define el color del texto como blanco */
+    padding: 10px 20px;
+    /* Añade un relleno (espacio) de 10 px 20px */
+    text-align: center;
+    /* Alinea al centro el texto */
+    display: flex;
+    /* Utiliza Flexbox para alinear los elementos */
+    flex-direction: row;
+    /* Alinea los hijos (cabecera, navegación, etc.) horizontalmente */
+    justify-content: space-between;
+    /* Aplica un espacio entre los elementos que estan contenidos dentro, desplazandolos hacia los extremos */
+}
+
+/* Contenido principal */
+main {
+    flex: 1;
+    /* Hace que el contenido de la etiqueta main crezca para llenar el espacio disponible ¡¡¡IMPORTANTE!!!*/
+    padding: 0 2rem 2rem 2rem;
+    /* Añade un relleno de 2rem alrededor del contenido principal */
+    display: flex;
+    /* Utiliza Flexbox para alinear los elementos */
+    justify-content: space-between;
+    /* Aplica un espacio entre los elementos que estan contenidos dentro, desplazandolos hacia los extremos */
+}
+
+
+
+/* Estilos del pie de página */
+footer {
+    background-color: #FF0000;
+    /* Establece un color de fondo */
+    color: white;
+    /* Establece el color del texto en blanco */
+    text-align: center;
+    /* Centra el texto */
+    padding: 15px 0;
+    /* Añade un relleno vertical de 15px 0 */
+    margin-top: 20px;
+}
+
+header div {
+    display: flex;
+    /* Utiliza Flexbox para alinear los elementos */
+    flex-direction: row;
+    /* Alinea los elementos en filas  */
+    margin-right: 10px;
+    /* Aplica un margen derecho de 10px*/
+    justify-content: center;
+    /* Justifica el contenido en el centro*/
+}
+
+
+header div img {
+    width: 40px;
+    /* Establece el ancho de la imagen*/
+    height: auto;
+    /* Establece el alto de la imagen*/
+    margin-right: 10px;
+    /* Establece el margen derecho de la imagen*/
+}
+
+header h1 {
+    font-size: 1.5rem;
+    /* Establece el tamaño de la fuente */
+    margin: 0%;
+    /* Establece el margen al 0%*/
+}
+
+.claseDerecha input {
+    display: flex;
+    /* Utiliza Flexbox para alinear los elementos */
+    justify-content: center;
+    /* Justifica el contenido en el centro*/
+    padding: 5 px;
+    /* Establece un relleno de 5px*/
+    height: 30px;
+    font-size: 1em;
+    /* Establece el tamaño de fuente*/
+    width: 300px;
+    /* Establece el ancho */
+    border: 1px;
+    /* Establece el grosor del borde */
+    border: solid;
+    /* Establece que el borde sea solido */
+    color: #CCC;
+    /* Establece el color del texto */
+    border-radius: 2px;
+    /* Establece el los pixeles de radio que se le aplica a las esquinas */
+    margin: auto;
+    /* Aplica el margen automaticamente a ambos lados centrando el texto en le centro del cajon  */
+}
+
+.claseDerecha button {
+    height: 40px;
+    /* Establece el alto del boton */
+    width: 40px;
+    /* Establece el ancho del boton */
+    background-color: white;
+    /* Establece el fondo */
+    border: 1px;
+    /* Establece el grosor del borde */
+    border-radius: 2px;
+    /* Establece el radio de las esquinas */
+    border: solid;
+    /* Establece que sea solido el borde */
+    color: #CCC;
+    /* Establece el color del texto */
+    margin-right: 5px;
+    /* Establece el margen derecho */
+    transition: background-color 0.3s, border-color 0.3s;
+    /* Establece una transiccion al poner encima el cursor */
+}
+
+.claseDerecha button img {
+    width: 100%;
+    /* Establece el ancho al 100% para que ocupe toda el hueco en el que se encuentra integrado */
+    height: 100%;
+    /* Establece el alto al 100% para que ocupe toda el hueco en el que se encuentra integrado */
+}
+
+.claseDerecha button:hover {
+    background-color: #F1F1F1;
+    /* Establece el color de fondo al pasar el cursor por encima*/
+    border-color: #BBB;
+    /* Establece el color del borde al pasar el cursor por encima */
+}
+
+.contenedor-nav {
+    background-color: #F1F1F1;
+    /* Establece el color de fondo */
+    padding: 20px;
+    /* Establece el relleno */
+    width: 20%;
+    /* Establece el tamaño de ancho del cajo */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    /* Aplica la sombra */
+    display: flex;
+    /* Utiliza Flexbox para alinear los elementos */
+    flex-direction: column;
+    /* Alinea los hijos verticalmente */
+}
+
+.contenedor-nav ul {
+    display: flex;
+    /* Utiliza Flexbox para alinear los elementos */
+    flex-direction: column;
+    /* Alinea los hijos verticalmente */
+    width: 100%;
+    /* Establece el ancho del elemento para que ocupe todo el ancho del contenedor donde se encuentra */
+    list-style: none;
+    /* Elimina los estilos de la lista ("puntitos de la lista") */
+}
+
+.contenedor-nav ul li {
+    display: flex;
+    /* Utiliza Flexbox para alinear los elementos */
+    flex-direction: row;
+    /* Alinea los hijos horizontalmente */
+    justify-items: center;
+    /* Justifica los elementos en el centro */
+    padding: 10px;
+    /* Establece un relleno de 10px */
+    cursor: pointer;
+    /* Cambiar el cursor a puntero cuando se pase por encima*/
+}
+
+.contenedor-nav ul li img {
+    width: 20px;
+    /* Establece el ancho */
+    height: 20px;
+    /* Establece el alto */
+    margin-right: 10px;
+    /* Establece el margen derecho */
+}
+
+.contenedor-nav nav ul li a {
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces que tiene por defecto */
+    color: #333;
+    /* Establece el color del texto */
+    font-weight: bold;
+    /* Establece la fuente de los enlaces */
+
+}
+
+.contenedor-videos-audios {
+    padding: 20px;
+    /* Establece el relleno del elemento */
+    flex: 1;
+    /* Hace que se asegure que el elemento ocupe todo el espacio del elemento padre  */
+    width: 80%;
+    /* Establece el ancho del contenedor */
+    display: flex;
+    /* Utiliza Flexbox para alinear los elementos */
+    flex-direction: column;
+    /* Alinea los hijos verticalmente */
+}
+
+.video-card {
+    background-color: #FFF;
+    /* Establece el color de fondo */
+    border: 1px;
+    /* Establece el grosor del borde */
+    border: solid;
+    /* Establece que el borde sea solido */
+    border-color: #DDD;
+    /* Establece el color del borde */
+    border-radius: 4px;
+    /* Establece el radio de las esquinas en 4px */
+    padding: 10px;
+    /* Establece el relleno */
+    margin: 10px 0;
+    /* Establece el margen */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    /* Establece una sombra */
+    text-align: center;
+    /* Alinea el texto al centro */
+}
+
+.video-card h2 {
+    margin-top: 20px;
+    /* Establece el margen superior */
+    color: #444;
+    /* Establece el color de texto */
+    display: block;
+    /* Alineación display block */
+    width: 100%;
+    /* Establece el ancho */
+    max-width: 500px;
+    /* Establece el ancho maximo. En caso de que el contenedor en el que está superase los 500px, este se mantedría como maximo en 500px */
+    margin: 0 auto 10px;
+    /* Establece el margen */
+    border-radius: 5px;
+    /* Establece el radio de las esquinas del borde */
+}
+
+.audio-card {
+    background-color: #FFF;
+    /* Establece el color de fondo */
+    border: 1px;
+    /* Establece el grosor del borde */
+    border: solid;
+    /* Establece que el borde sea solido */
+    border-color: #DDD;
+    /* Establece el color del borde */
+    border-radius: 4px;
+    /* Establece el radio de las esquinas en 4px */
+    padding: 10px;
+    /* Establece el relleno */
+    margin: 10px 0;
+    /* Establece el margen */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    /* Establece una sombra */
+    text-align: center;
+    /* Alinea el texto al centro */
+}
+
+.audio-card,
+.video-card h2 {
+    text-align: center;
+    /* Alinea el texto al centro */
+    margin-top: 20px;
+    /* Establece el margen superior*/
+    color: #444;
+    /* Establece el color del texto */
+}
+
+.audio-card audio,
+video,
+iframe {
+    display: block;
+    /* Alineación display block */
+    width: 100%;
+    /* Establece el ancho */
+    max-width: 500px;
+    /* Establece el ancho maximo. En caso de que el contenedor en el que está superase los 500px, este se mantedría como maximo en 500px */
+    margin: 0 auto 10px;
+    /* Establece el ancho */
+    border-radius: 5px;
+    /* Establece el radio de las esquinas en 5px */
+}
+
+.audio-card,
+.video-card p {
+    color: #444;
+    /* Añadimos color al p de la caja de los videos y audios*/
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+footer a {
+    color: white;
+    /* Establece el color del texto */
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces que tiene por defecto */
+    margin: 0 10px;
+    /* Establece el margen */
+}
+
+footer div {
+    display: flex;
+    /* Utiliza Flexbox para alinear los elementos */
+    flex-direction: row;
+    /* Alinea los hijos verticalmente */
+    justify-content: center;
+    /* Justifica el contenido en el centro*/
+}
+
+footer a:hover {
+    text-decoration-line: underline;
+    /* Aplica un subrayado al pasar el cursor encima del elemento */
+}
