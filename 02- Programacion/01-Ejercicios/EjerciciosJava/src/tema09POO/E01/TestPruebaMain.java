@@ -23,6 +23,7 @@ public class TestPruebaMain {
 
         System.out.println("Instancia de la clase Persona: " + persona1.nombre);
         System.out.println(perro2.dni);
+        System.out.println(gato1.color.toUpperCase());
 
     }
 }
