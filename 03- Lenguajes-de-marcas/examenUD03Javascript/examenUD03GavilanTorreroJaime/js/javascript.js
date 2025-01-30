@@ -1,9 +1,49 @@
-// Funcion para jugar
-function jugar() {
-  let opcionJugador =
-    parseInt(document.getElementById("Piedra" || "Papel" || "Tijera" || "Lagarto" || "Spock").value);
+// Date: 2021/05/21
+const rules = {
+    Piedra: ['Tijera', 'Lagarto'],
+    Papel: ['Piedra', 'Spock'],
+    Tijera: ['Papel', 'Lagarto'],
+    Lagarto: ['Papel', 'Spock'],
+    Spock: ['Piedra', 'Tijera']
+};
 
-  //let n2 = parseInt(document.getElementById("numero2").value);
-  document.getElementById("resultado").innerText = "La suma es " + (n1 );
-  //document.getElementById("resultado").className = "resultadoSuma";
+// Get computer's choice
+function getComputerChoice() {
+    const choices = Object.keys(rules);
+    const randomIndex = Math.floor(Math.random() * choices.length);
+    return choices[randomIndex];
+}
+
+// Determine winner
+function determineWinner(playerChoice, computerChoice) {
+    if (playerChoice === computerChoice) {
+        return "¡Empate!";
+    }
+    if (rules[playerChoice].includes(computerChoice)) {
+        return "¡Ganaste!";
+    }
+    return "¡Perdiste!";
+}
+
+// Main game function
+function jugar() {
+    // Get player's choice from select element
+    const selectElement = document.querySelector('select');
+    const playerChoice = selectElement.value;
+    
+    // Validate selection
+    if (!playerChoice) {
+        document.getElementById('resultado').textContent = "Por favor, elige una opción";
+        return;
+    }
+
+    // Get computer's choice
+    const computerChoice = getComputerChoice();
+
+    // Determine winner
+    const result = determineWinner(playerChoice, computerChoice);
+
+    // Display result
+    document.getElementById('resultado').textContent = 
+        `Tú elegiste: ${playerChoice}\nLa máquina eligió: ${computerChoice}\n${result}`;
 }
