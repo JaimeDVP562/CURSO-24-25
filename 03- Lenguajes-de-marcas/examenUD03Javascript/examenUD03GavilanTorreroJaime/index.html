@@ -20,29 +20,25 @@
                     <h2>Elige con qué quieres jugar</h2>
                 </legend>
                 <div>
-                    <select required>
-                        <option value disabled selected>Elige una
-                            opción</option>
+                    <select  id="turnoJugador">
 
                         <!--Añadimos las opciones del juego-->>
-                        <option id="Piedra">Piedra</option>
-                        <option id="Papel">Papel</option>
-                        <option id="Tijera">Tijera</option>
-                        <option id="Lagarto">Lagarto</option>
-                        <option id="Spock">Spock</option>
+                        <option value="Piedra">Piedra</option>
+                        <option value="Papel">Papel</option>
+                        <option value="Tijera">Tijera</option>
+                        <option value="Lagarto">Lagarto</option>
+                        <option value="Spock">Spock</option>
                     </select><br>
-                    <div>
-                        <button class="sumar botones"
-                            onclick="jugar()">Jugar</button>
-                        <p id="resultado" class="resultado"></p>
-                    </div>
-                </div>
 
+                </div>
+                <div>
+                    <button class="botones"
+                        onclick="jugar()">Jugar</button>
+                </div>
             </div>
-            <div class="opciones">
 
             </fieldset>
-
+            <p id="resultado" class="resultado"></p>
         </main>
         <footer>
 
