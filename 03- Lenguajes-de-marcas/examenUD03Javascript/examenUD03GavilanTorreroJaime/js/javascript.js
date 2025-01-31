@@ -16,7 +16,9 @@ let ganaMaquina = false;
     });
 // Función para jugar
 function jugar() {
-
+    document.getElementById('turnoJugador').addEventListener('change', function () {
+        turnoJugador = this.value; // Elije el jugador 
+    });
     turnoMaquina = opciones[Math.floor(Math.random() * opciones.length)]; // Elije la máquina de manera aleatoria
     document.getElementById('resultado').innerText = (turnoMaquina + ' ' + turnoJugador); // Muestra el resultado 
 }
