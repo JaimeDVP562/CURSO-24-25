@@ -11,9 +11,7 @@ let ganaJugador = false;
 let ganaMaquina = false;
  
  */
-    document.getElementById('turnoJugador').addEventListener('change', function () {
-        turnoJugador = this.value; // Elije el jugador 
-    });
+
 // Función para jugar
 function jugar() {
     document.getElementById('turnoJugador').addEventListener('change', function () {
