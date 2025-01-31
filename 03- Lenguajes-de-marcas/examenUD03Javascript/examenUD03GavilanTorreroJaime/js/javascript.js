@@ -1,134 +1,51 @@
-
-
-/*
-
-// Date: 2021/05/21
-const rules = {
-    Piedra: ['Tijera', 'Lagarto'],
-    Papel: ['Piedra', 'Spock'],
-    Tijera: ['Papel', 'Lagarto'],
-    Lagarto: ['Papel', 'Spock'],
-    Spock: ['Piedra', 'Tijera']
-};
-
-// Get computer's choice
-function getComputerChoice() {
-    const choices = Object.keys(rules);
-    const randomIndex = Math.floor(Math.random() * choices.length);
-    return choices[randomIndex];
-}
-
-// Determine winner
-function determineWinner(playerChoice, computerChoice) {
-    if (playerChoice === computerChoice) {
-        return "¡Empate!";
-    }
-    if (rules[playerChoice].includes(computerChoice)) {
-        return "¡Ganaste!";
-    }
-    return "¡Perdiste!";
-}
-
-// Main game function
-function jugar() {
-    // Get player's choice from select element
-    const selectElement = document.querySelector('select');
-    const playerChoice = selectElement.value;
-
-    // Validate selection
-    if (!playerChoice) {
-        document.getElementById('resultado').textContent = "Por favor, elige una opción";
-        return;
-    }
-
-    // Get computer's choice
-    const computerChoice = getComputerChoice();
-
-    // Determine winner
-    const result = determineWinner(playerChoice, computerChoice);
-
-    // Display result
-    document.getElementById('resultado').textContent =
-        `Tú elegiste: ${playerChoice}\nLa máquina eligió: ${computerChoice}\n${result}`;
-}
-
-
-*/
-// Prueba juego casero
-
-
-
-
-
-/*
-
-// Date: 2021/05/21
-const rules = {
-    Piedra: ['Tijera', 'Lagarto'],
-    Papel: ['Piedra', 'Spock'],
-    Tijera: ['Papel', 'Lagarto'],
-    Lagarto: ['Papel', 'Spock'],
-    Spock: ['Piedra', 'Tijera']
-};
-
-// Get computer's choice
-function getComputerChoice() {
-    const choices = Object.keys(rules);
-    const randomIndex = Math.floor(Math.random() * choices.length);
-    return choices[randomIndex];
-}
-
-// Determine winner
-function determineWinner(playerChoice, computerChoice) {
-    if (playerChoice === computerChoice) {
-        return "¡Empate!";
-    }
-    if (rules[playerChoice].includes(computerChoice)) {
-        return "¡Ganaste!";
-    }
-    return "¡Perdiste!";
-}
-
-// Main game function
-function jugar() {
-    // Get player's choice from select element
-    const selectElement = document.querySelector('select');
-    const playerChoice = selectElement.value;
-
-    // Validate selection
-    if (!playerChoice) {
-        document.getElementById('resultado').textContent = "Por favor, elige una opción";
-        return;
-    }
-
-    // Get computer's choice
-    const computerChoice = getComputerChoice();
-
-    // Determine winner
-    const result = determineWinner(playerChoice, computerChoice);
-
-    // Display result
-    document.getElementById('resultado').textContent =
-        `Tú elegiste: ${playerChoice}\nLa máquina eligió: ${computerChoice}\n${result}`;
-}
-
-
-*/
-// Prueba juego casero
-
 // Declaramos las variales
 let turnoJugador = document.getElementById('turnoJugador').value; // Turno del jugador  
-let opciones = ["Piedra","Papel", "Tijera", "Lagarto" , "Spock" ] // Turno de la máquina de manera aleatoria  
+let turnoMaquina; // Turno de la maquina
+// Array que guarda las opciones posibles de la máquina
+let opciones = ["Piedra", "Papel", "Tijera", "Lagarto", "Spock"]
 
-function jugar() {
+/**
+ * Variables de control de resultado
+let empate = false;
+let ganaJugador = false;
+let ganaMaquina = false;
+ 
+ */
     document.getElementById('turnoJugador').addEventListener('change', function () {
-        let turnoJugador = this.value; // Elije el jugador 
-        let turnoMaquina = opciones[Math.floor(Math.random() * opciones.length)]; // Elije la máquina de manera aleatoria
-        document.getElementById('resultado').innerText = (turnoJugador + ' ' + turnoMaquina); // Muestra el resultado 
-
+        turnoJugador = this.value; // Elije el jugador 
     });
+// Función para jugar
+function jugar() {
 
+    turnoMaquina = opciones[Math.floor(Math.random() * opciones.length)]; // Elije la máquina de manera aleatoria
+    document.getElementById('resultado').innerText = (turnoMaquina + ' ' + turnoJugador); // Muestra el resultado 
 }
 
+// Función para comprobar el resultado 
+function comprobarResultado() {
+    if (turnoJugador === turnoMaquina) {
+        document.getElementById('resultado2').innerText = 'Empate';
+    } else if ((turnoJugador === "Piedra" && (turnoMaquina === "Tijera" || turnoMaquina === "Lagarto")) ||
+        (turnoJugador === "Papel" && (turnoMaquina === "Piedra" || turnoMaquina === "Spock")) ||
+        (turnoJugador === "Tijera" && (turnoMaquina === "Papel" || turnoMaquina === "Lagarto")) ||
+        (turnoJugador === "Lagarto" && (turnoMaquina === "Papel" || turnoMaquina === "Spock")) ||
+        (turnoJugador === "Spock" && (turnoMaquina === "Piedra" || turnoMaquina === "Tijera"))) {
+        document.getElementById('resultado2').innerText = 'Gana jugador';
+    } else {
+        document.getElementById('resultado2').innerText = 'Gana la máquina';
+    }
+}
 
+/**
+ * // Imprimir resultado
+if (empate) {
+    document.getElementById('resultado2').innerText = "Empate";
 
+} else if (ganaJugador) {
+    document.getElementById('resultado2').innerText = "Gana jugador";
+
+} else if (ganaMaquina) {
+    document.getElementById('resultado2').innerText = "Gana la máquina";
+
+}
+ */

@@ -1,4 +1,4 @@
---Jaime Gavil�n Torrero
+--Jaime Gavilan Torrero
 -- Turno de tarde DAW
 --CURSO 2024/2025
 
@@ -145,5 +145,5 @@ SELECT
 	CONCAT (j.nombre, j.apellido1, ' ', j.apellido1, ' ', j.apellido1)AS nombre_jefe,
 	CONCAT(jj.nombre, ' ',jj.apellido1, ' ', jj.apellido2) AS jefe_jefe
 FROM empleado
-LEFT JOIN  empleado j ON empleado.codigo_jefe =  j.codigo_empleado
+LEFT JOIN  empleado j ON empleado.codigo_jefe = j.codigo_empleado
 LEFT JOIN  empleado jj ON j.codigo_jefe = jj.codigo_empleado;
