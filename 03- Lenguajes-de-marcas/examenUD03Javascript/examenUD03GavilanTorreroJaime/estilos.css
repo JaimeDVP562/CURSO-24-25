@@ -20,14 +20,18 @@ body {
 
 main {
   flex: 1;
+  flex-direction: center;
+  /* Alineación vertical*/
+  align-items: center;
+  /* Alineación horizontal*/
 }
 
 h1 {
-  display: flex;
-  flex-direction: center;
+
   margin-bottom: 20px;
   font-size: 2.5em;
   color: #61DAFB;
+  text-align: center;
 }
 
 fieldset {
@@ -45,9 +49,10 @@ fieldset {
   padding: 20px;
 
 }
+
 fieldset div {
   display: flex;
-flex-direction: row;
+  flex-direction: row;
 }
 
 select {
@@ -62,7 +67,6 @@ select {
 
 }
 
-/* Botones de l calculadora*/
 .botones {
   padding: 10px 15px;
   border: none;
@@ -84,8 +88,18 @@ select {
   flex-direction: column;
   /* Alineación horizontal*/
   justify-content: center;
+  align-items: center;
   margin-top: 20px;
   font-size: 1.5em;
+}
+
+.resultado div {
+  display: flex;
+  flex-direction: row;
+  flex-direction: center;
+  /* Alineación vertical*/
+  align-items: center;
+  /* Alineación horizontal*/
 }
 
 .resultado img {
