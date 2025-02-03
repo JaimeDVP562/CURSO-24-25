@@ -10,11 +10,11 @@ public class Bicicleta extends Vehiculo {
         return 0;
     }
 
-    void hacerCaballito() {
+    public void hacerCaballito() {
         System.out.println("Estoy haciendo el caballito que chuchuchuli");
     }
 
-    void kilometrosTotales() {
+    public void kilometrosTotales() {
         System.out.println("He recorrido " + kilometrosRecorridos + " kilómetros");
     }
 
