@@ -1,19 +1,15 @@
 package tema09POO.E04;
 
 public class Vehiculo {
-    protected static int vechiculosCreados = 0;
-    protected static int kilometrosTotales = 0;
+    public static int vechiculosCreados = 0;
+    public static int kilometrosTotales = 0;
 
-    public void getKilometrosTotales() {
-        System.out.println("Los vehiculos llevan recorridos " + kilometrosTotales);
-    }
-
-    static int andar(int kilometros) {
-        kilometrosTotales += kilometros;
+    public static int getKilometrosTotales() {
         return kilometrosTotales;
     }
 
-    public int getVechiculosCreados() {
+    public static int getVechiculosCreados() {
+        System.out.println("Los vehículos creados son " + vechiculosCreados);
         return vechiculosCreados;
     }
 

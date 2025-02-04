@@ -4,10 +4,19 @@ public class Bicicleta extends Vehiculo {
 
     public int kilometrosRecorridos = 0;
 
-    public int getKilometrosRecorridos(int kilometros) {
+    public Bicicleta() {
+        Vehiculo.vechiculosCreados++;
+    }
+
+    public void getKilometrosRecorridos(int kilometros) {
         kilometrosRecorridos += kilometros;
+        Vehiculo.kilometrosTotales += kilometros;
         System.out.println("La bicicleta lleva recorridos " + kilometrosRecorridos);
-        return 0;
+    }
+
+    public void andar(int kilometros) {
+        this.kilometrosRecorridos += kilometros;
+        Vehiculo.kilometrosTotales += kilometros;
     }
 
     public void hacerCaballito() {

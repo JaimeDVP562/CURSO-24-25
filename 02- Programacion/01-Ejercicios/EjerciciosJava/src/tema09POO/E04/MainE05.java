@@ -37,6 +37,7 @@ public class MainE05 {
                 case 1: {
                     System.out.println("¿Cuántos kilómetros quiere recorrer?");
                     kilometros = sc.nextInt();
+                    bicicleta.andar(kilometros);
                     System.out.println("");
                 }
                     break;
@@ -48,7 +49,6 @@ public class MainE05 {
                     System.out.println("¿Cuántos kilómetros quiere recorrer?");
                     kilometros = sc.nextInt();
                     coche.andar(kilometros);
-                    System.out.println("El coche ha recorrido " + coche.kilometrosTotales + " kilómetros");
                     System.out.println();
                 }
                     break;
@@ -58,19 +58,23 @@ public class MainE05 {
                 }
                     break;
                 case 5: {
-                    System.out.println("La bicicleta ha recorrido " + bicicleta.kilometrosTotales + " kilometros");
+                    System.out.println("La bicicleta ha recorrido " + bicicleta.kilometrosRecorridos + " kilometros");
                     System.out.println();
                 }
                     break;
                 case 6: {
-                    System.out.println("El coche ha recorrido " + coche.kilometrosTotales + " kilometros");
+                    System.out.println("El coche ha recorrido " + coche.kilometrosRecorridos + " kilometros");
                     System.out.println();
                 }
                     break;
                 case 7: {
-                    System.out.println("Los vehículos llevan recorridos");
-
+                    System.out.println(
+                            "Los vehículos llevan recorridos " + Vehiculo.getKilometrosTotales() + " kilometros");
                 }
+                case 8: {
+                    Vehiculo.getVechiculosCreados();
+                }
+                    break;
 
                 default:
                     break;
