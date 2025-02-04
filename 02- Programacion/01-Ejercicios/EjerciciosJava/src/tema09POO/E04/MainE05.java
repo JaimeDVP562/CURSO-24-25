@@ -42,6 +42,8 @@ public class MainE05 {
                     break;
                 case 2: {
                     bicicleta.hacerCaballito();
+                    System.out.println();
+
                 }
                     break;
                 case 3: {
