@@ -33,7 +33,12 @@ function jugar() {
 
     // Actualiza las imágenes
     document.getElementById('imagenJugador').src = `imagenes/${turnoJugador}.png`;
+    document.getElementById('VS').innerText = 'VS';
     document.getElementById('imagenMaquina').src = `imagenes/${turnoMaquina}.png`;
+
+    // Creamos el texto alternativo para la imagen
+    document.getElementById('imagenJugador').alt = `imagenes/${turnoJugador}.png`;
+    document.getElementById('imagenMaquina').alt = `imagenes/${turnoMaquina}.png`;
 
     // Llamamos a la funcion comprobarResultado
     comprobarResultado();

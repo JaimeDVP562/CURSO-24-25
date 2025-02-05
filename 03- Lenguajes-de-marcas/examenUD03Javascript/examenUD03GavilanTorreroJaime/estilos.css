@@ -24,6 +24,8 @@ main {
   /* Alineación vertical*/
   align-items: center;
   /* Alineación horizontal*/
+  flex-direction: column;
+  justify-items: center;
 }
 
 h1 {
@@ -47,6 +49,7 @@ fieldset {
   background-color: #3C4043;
   margin-bottom: 20px;
   padding: 20px;
+  width: 400px;
 
 }
 
