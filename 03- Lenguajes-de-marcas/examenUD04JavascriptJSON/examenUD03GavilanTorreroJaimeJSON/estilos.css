@@ -1,0 +1,104 @@
+* {
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  /* Establece la altura de línea (espacio entre líneas de texto) */
+  background-color: #f4f4f4;
+  /* Aplica un color de fondo claro al cuerpo de la página */
+  flex-direction: column;
+  flex-direction: center;
+  /* Alineación vertical*/
+  align-items: center;
+  /* Alineación horizontal*/
+  justify-content: center;
+}
+
+main {
+  flex: 1;
+  flex-direction: center;
+  /* Alineación vertical*/
+  align-items: center;
+  /* Alineación horizontal*/
+  flex-direction: column;
+  justify-items: center;
+  padding: 0 2rem 2rem 2rem;
+}
+
+header {
+  background-color: #E94C2C;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+  max-width: 100%;
+  text-align: center;
+
+}
+
+footer {
+  background-color: #E94C2C;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+main img {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.botones {
+
+  display: flex;
+  justify-content: center;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  justify-items: center;
+  /*o
+Cambio de color al pasar el cursor: #0056B3.
+o
+Botón deshabilitado:
+▪
+Cambio de color cuando está deshabilitado: #CCC.
+▪
+Cursor bloqueado.*/
+}
+
+.botones:hover {
+  background-color: #0056B3;
+  transition: background-color 0.3s;
+}
+
+.contenedor-chistes {
+  padding: 1rem;
+  margin: 10px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px;
+  border: solid;
+  border-color: #DDD;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: 50px;
+
+}
+
+select {
+  padding: 10px;
+  margin: 10px;
+  border: 1px;
+  border: solid;
+  border-color: #DDD;
+  border-radius: 5px;
+}

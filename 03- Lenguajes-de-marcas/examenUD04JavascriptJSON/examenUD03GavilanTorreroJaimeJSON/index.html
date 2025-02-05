@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css">
+        <meta author="Jaime Gavilán Torrero"></meta>
+        <title>Ejercicio de chistes de Chuck Norris</title>
+    </head>
+
+    <body>
+        <header class="contenedor-cabecera">
+            <h1>Ejercicio de chistes de Chuck Norris</h1>
+        </header>
+        <main>
+            <div>
+                <img src="imagenes/sealofapproval.png" alt="">
+            </div>
+            <div class="contenedor-chistes"></div>
+                <div>
+                    <label for="">Seleccione una categoría:</label>
+                    <select  id="turnoJugador">
+                        <!--Añadimos las opciones del juego-->
+                        <option value="animal">animal</option>
+                        <option value="career">career</option>
+                        <option value="celebrity">celebrity</option>
+                        <option value="dev">dev</option>
+                        <option value="explicit">explicit</option>
+                        <option value="fashion">fashion</option>
+                        <option value="food">food</option>
+                        <option value="history">history</option>
+                        <option value="money">money</option>
+                        <option value="movie">movie</option>
+                        <option value="music">music</option>
+                        <option value="political">political</option>
+                        <option value="religion">religion</option>
+                        <option value="science">science</option>
+                        <option value="sport">sport</option>
+                        <option value="travel">travel</option>
+                    </select><br>
+                </div>
+                <button class="botones"
+                    onclick ="jugar()">Mostrar chiste</button>
+
+
+
+
+            <div class="resultado">
+                <div>
+                    <img id="imagenMaquina" src="" alt="">
+                    <p id="VS" ></p>
+                    <img id="imagenJugador" src="" alt="">    
+                </div>
+                <p id="resultado" ></p>
+                <p id="resultado2" ></p>
+            </div>
+            
+        </main>
+        <footer>
+            <p>&copy; 2024 Jaime Gavilán Torrero. Todos los derechos reservados.</a>
+        </footer>
+    </body>
+
+    <!--Script -->
+    <script src="js/javascript.js"> </script>
+
+</html>
