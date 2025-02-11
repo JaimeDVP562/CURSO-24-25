@@ -1,5 +1,4 @@
 package clases;
-//Ignacio Lopez calderon
 
 public class Clinica implements interfaces.ClinicaInterfaz {
     private static final int MAX = 100;

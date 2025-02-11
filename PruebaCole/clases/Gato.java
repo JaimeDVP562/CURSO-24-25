@@ -1,5 +1,5 @@
 package clases;
-//Ignacio Lopez calderon
+
 
 
 public class Gato extends Mascota {

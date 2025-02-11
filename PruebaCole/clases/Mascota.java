@@ -1,6 +1,5 @@
 package clases;
 
-//Ignacio Lopez calderon
 
 public abstract class Mascota {
 

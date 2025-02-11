@@ -1,6 +1,5 @@
 package clases;
 
-//Ignacio Lopez calderon
 public class Perro extends Mascota {
     
     private String raza;
