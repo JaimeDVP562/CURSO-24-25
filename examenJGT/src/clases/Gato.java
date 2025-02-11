@@ -16,17 +16,19 @@ public class Gato extends Mascota {
     }
 
     public Gato(String pelaje, String chip, int edad, String nombre) {
-        super(chip, edad, nombre);
+        super(chip, nombre, edad);
         this.pelaje = pelaje;
     }
 
     public Gato(String pelaje, String chip, int edad, String nombre, String raza) {
-        super(chip, edad, nombre, raza);
+        super(chip, nombre, edad, raza);
         this.pelaje = pelaje;
     }
 
     public Gato(String chip, String nombre) {
-        super();
+        this.chip = chip;
+        this.nombre = nombre;
+
     }
 
     // Generamos los GETTERS
