@@ -12,7 +12,7 @@ function rellenarCategorias() {
 
     // Creamos una nueva instancia de XMLHttpRequest
     const peticionJSON = new XMLHttpRequest();
-    
+
     // Configuramos la solicitud 
     peticionJSON.open("GET", API2);
 
@@ -32,10 +32,14 @@ function rellenarCategorias() {
             dataContainer.textContent = "Error al cargar categorías.";
         }
     };
+
+    // Controlamos el error 
     peticionJSON.onerror = function () {
         console.error("Error al realizar la solicitud de categorías.");
         dataContainer.textContent = "Error al cargar categorías.";
     };
+
+    // Enviamos la petición
     peticionJSON.send();
 }
 
