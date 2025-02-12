@@ -12,17 +12,14 @@ WHERE altura > (
 
 
 --EJ02
---Muestra un listado con los jugadores que han jugado en los partidos de la
---temporada '98/99' contra los Raptors. Total de filas recuperadas: 84.
 SELECT jugador.nombre
 FROM jugador
 INNER JOIN estadistica ON jugador.codigo = estadistica.jugador
 WHERE estadistica.temporada ='98/99'
-
 	AND jugador.nombre_equipo IN(
 		SELECT equipo_local
 		FROM partido
-		WHERE partido.equipo_visitante ='Raptors'
+		WHERE equipo_visitante ='Raptors'
 	) OR jugador.nombre_equipo IN
 	(
 		SELECT equipo_visitante
@@ -145,7 +142,7 @@ WHERE jugador.codigo IN (
 	)
 )
 
---EJ13--------------------------------------->preguntar a fran<--------------NO SALEN LOS MISMOS RESULTADOS 
+--EJ13-
 SELECT *
 FROM jugador
 WHERE jugador.nombre_equipo IN (
@@ -164,8 +161,7 @@ WHERE jugador.nombre_equipo IN (
 )
 ORDER BY jugador.codigo
 
---EJ14--------------------------------------->preguntar a fran<--------------NO SALEN LOS MISMOS RESULTADOS 
-
+--EJ14
 SELECT jugador.nombre
 FROM jugador
 WHERE jugador.codigo IN (
