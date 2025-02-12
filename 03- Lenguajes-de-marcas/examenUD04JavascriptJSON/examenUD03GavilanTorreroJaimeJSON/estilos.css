@@ -33,7 +33,6 @@ header {
   color: white;
   padding: 1.5rem 0;
   text-align: center;
-  text-align: center;
 
 }
 
@@ -46,6 +45,7 @@ footer {
 }
 
 main img {
+  margin-top: 1rem;
   max-width: 200px;
   height: auto;
   margin-bottom: 1rem;
@@ -63,21 +63,16 @@ main img {
   cursor: pointer;
   border-radius: 5px;
   justify-items: center;
-  /*o
-Cambio de color al pasar el cursor: #0056B3.
-o
-Botón deshabilitado:
-▪
-Cambio de color cuando está deshabilitado: #CCC.
-▪
-Cursor bloqueado.*/
 }
 
 .botones:hover {
   background-color: #0056B3;
   transition: background-color 0.3s;
 }
-
+.botonDeshabilitado{
+  background-color: #CCC;
+  
+}
 .contenedor-chistes {
   padding: 1rem;
   margin: 10px;

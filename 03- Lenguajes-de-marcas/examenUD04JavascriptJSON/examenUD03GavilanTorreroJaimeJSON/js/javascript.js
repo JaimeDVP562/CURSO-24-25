@@ -1,5 +1,5 @@
 // API para obtener los datos
-const API = "https://api.chucknorris.io/jokes/random";
+const API = "https://api.chucknorris.io/jokes/random?category=";
 const API2 = "https://api.chucknorris.io/jokes/categories";
 
 // Seleccionamos los elementos del DOM necesarios
@@ -7,7 +7,7 @@ const button = document.getElementById("mostrarChiste");
 const dataContainer = document.getElementById("dataContainer");
 const categoria = document.getElementById("categoria");
 
-// Función para obtener las categorías desde la API de las categorias
+// Función para obtener las categorías desde la API de categorías
 function obtenerCategorias() {
     const peticionJSON = new XMLHttpRequest();
     peticionJSON.open("GET", API2);
@@ -35,73 +35,74 @@ function obtenerCategorias() {
 
 // Función que realiza la solicitud a la API de los chistes
 function obtenerDatos() {
+    const categoriaSeleccionada = categoria.value;
+
+    // Verificamos si el usuario ha seleccionado una categoría
+    if (categoriaSeleccionada === "") {
+        dataContainer.innerHTML = `<p class="error">Debes seleccionar una categoría antes de obtener un chiste.</p>`;
+        return;
+    }
 
     // Creamos una nueva instancia de XMLHttpRequest
     const peticionJSON = new XMLHttpRequest();
 
-    // Configuramos la solicitud: GET a una API pública
-    peticionJSON.open("GET", API);
+    // Configuramos la solicitud con la categoría seleccionada
+    peticionJSON.open("GET", API + categoriaSeleccionada);
 
     // Asignamos los manejadores de eventos
-    peticionJSON.onload = onLoad;    // Cuando la solicitud se complete correctamente
-    peticionJSON.onerror = onError;  // Cuando ocurra un error
-    peticionJSON.onabort = onAbort;  // Cuando la solicitud sea abortada
+    peticionJSON.onload = onLoad;
+    peticionJSON.onerror = onError;
+    peticionJSON.onabort = onAbort;
 
     // Enviamos la solicitud
     peticionJSON.send();
 
-    // Al enviar la solicitud desactivamos el botón y mostramos el cargando
-    botonChiste.disabled = true;
-    botonChiste.textContent = "Cargando…";
+    // Desactivamos el botón mientras se carga el chiste
+    button.disabled = true;
+    button.textContent = "Cargando...";
+    
+    // Añadimos la clase del botón deshabilitado
+    button.classList.add("botonDeshabilitado");
 }
-
 
 // Asignamos el evento click al botón para iniciar la solicitud
 button.addEventListener("click", obtenerDatos);
 
-
-
 // Función para manejar la carga exitosa de los datos
 function onLoad() {
-    // Verificamos que el estado sea 200 (OK)
     if (this.status === 200) {
-        // Parseamos la respuesta JSON
         const data = JSON.parse(this.responseText);
-
-        // Limpiamos el contenedor antes de mostrar nuevos datos
         dataContainer.innerHTML = "";
 
-        // Creamos un contenedor div para la tarjeta
         const card = document.createElement("div");
         card.classList.add("card");
 
-        // Creamos un párrafo con el chiste
         const chiste = document.createElement("p");
-        chiste.textContent = data.value; // Usamos `value`, que es donde está el chiste
+        chiste.textContent = data.value;
 
-        // Añadimos el chiste a la tarjeta
         card.appendChild(chiste);
-
-        // Añadimos la tarjeta al contenedor principal
         dataContainer.appendChild(card);
     } else {
-        // Si el estado no es 200, mostramos un mensaje de error
         dataContainer.innerHTML = `<p class="error">Error: ${this.status}</p>`;
     }
 
-    // Cuando mostremos procesemos los datos volvemos a activar el boton
-    botonChiste.enabled = true;
-    botonChiste.textContent = "MostrarChiste";
+    // Reactivar el botón
+    button.disabled = false;
+    button.textContent = "Mostrar Chiste";
 }
 
 // Función para manejar errores en la solicitud
 function onError() {
     dataContainer.innerHTML = `<p class="error">Error al realizar la solicitud.</p>`;
+    button.disabled = false;
+    button.textContent = "Mostrar Chiste";
 }
 
 // Función para manejar cuando la solicitud se aborta
 function onAbort() {
     dataContainer.innerHTML = `<p class="error">La solicitud fue abortada.</p>`;
+    button.disabled = false;
+    button.textContent = "Mostrar Chiste";
 }
 
 // Llamar a la función para obtener categorías al cargar la página
