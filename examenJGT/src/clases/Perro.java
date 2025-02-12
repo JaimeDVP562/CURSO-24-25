@@ -21,7 +21,9 @@ public class Perro extends Mascota {
     }
 
     public Perro(String chip, String nombre) {
-        super();
+        this.chip = chip;
+        this.nombre = nombre;
+
     }
 
     // Generamos GETTERS
@@ -37,6 +39,11 @@ public class Perro extends Mascota {
     // Generamos SETTERS
     public void setTotalPerros(int totalPerros) {
         this.totalPerros = totalPerros;
+    }
+
+    @Override
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
 
     @Override

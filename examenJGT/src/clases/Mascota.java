@@ -11,17 +11,17 @@ public class Mascota {
     public Mascota() {
     }
 
-    public Mascota(String chip, int edad, String nombre, String raza) {
+    public Mascota(String chip, String nombre, int edad, String raza) {
         this.chip = chip;
-        this.edad = edad;
         this.nombre = nombre;
+        this.edad = edad;
         this.raza = raza;
     }
 
-    public Mascota(String chip, int edad, String nombre) {
+    public Mascota(String chip, String nombre, int edad) {
         this.chip = chip;
-        this.edad = edad;
         this.nombre = nombre;
+        this.edad = edad;
     }
 
     public Mascota(String chip, int edad) {
