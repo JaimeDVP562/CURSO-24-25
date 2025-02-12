@@ -72,7 +72,7 @@ function obtenerChiste() {
     button.textContent = "Cargando...";
 
     // Añadimos la clase del botón deshabilitado
-    button.classList.add("botonDeshabilitado");
+    //button.classList.add("botonDeshabilitado");
 }
 
 // Asignamos el evento click al botón para iniciar la solicitud
@@ -99,6 +99,10 @@ function onLoad() {
     // Reactivar el botón
     button.disabled = false;
     button.textContent = "Mostrar Chiste";
+
+    // Añadimos la clase del botón habilitado
+    //button.classList.add("botones");
+
 }
 
 // Función para manejar errores en la solicitud
