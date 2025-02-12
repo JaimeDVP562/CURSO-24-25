@@ -8,9 +8,15 @@ const dataContainer = document.getElementById("dataContainer");
 const categoria = document.getElementById("categoria");
 
 // Función para obtener las categorías desde la API de categorías
-function obtenerCategorias() {
+function rellenarCategorias() {
+
+    // Creamos una nueva instancia de XMLHttpRequest
     const peticionJSON = new XMLHttpRequest();
+    
+    // Configuramos la solicitud 
     peticionJSON.open("GET", API2);
+
+    // Asiganmos los manejadores de eventos
     peticionJSON.onload = function () {
         if (this.status === 200) {
             const categorias = JSON.parse(this.responseText);
@@ -34,12 +40,12 @@ function obtenerCategorias() {
 }
 
 // Función que realiza la solicitud a la API de los chistes
-function obtenerDatos() {
+function obtenerChiste() {
     const categoriaSeleccionada = categoria.value;
 
     // Verificamos si el usuario ha seleccionado una categoría
     if (categoriaSeleccionada === "") {
-        dataContainer.innerHTML = `<p class="error">Debes seleccionar una categoría antes de obtener un chiste.</p>`;
+        dataContainer.innerHTML = `<p class="error">Por favor selecciona una categoría”.</p>`;
         return;
     }
 
@@ -60,13 +66,13 @@ function obtenerDatos() {
     // Desactivamos el botón mientras se carga el chiste
     button.disabled = true;
     button.textContent = "Cargando...";
-    
+
     // Añadimos la clase del botón deshabilitado
     button.classList.add("botonDeshabilitado");
 }
 
 // Asignamos el evento click al botón para iniciar la solicitud
-button.addEventListener("click", obtenerDatos);
+button.addEventListener("click", obtenerChiste);
 
 // Función para manejar la carga exitosa de los datos
 function onLoad() {
@@ -106,4 +112,4 @@ function onAbort() {
 }
 
 // Llamar a la función para obtener categorías al cargar la página
-document.addEventListener("DOMContentLoaded", obtenerCategorias);
+document.addEventListener("DOMContentLoaded", rellenarCategorias);
