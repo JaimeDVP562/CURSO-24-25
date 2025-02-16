@@ -4,7 +4,7 @@ USE jardineria
 
 SELECT oficina.ciudad, oficina.telefono 
 FROM oficina
-WHERE oficina.pais LIKE 'España'
+WHERE oficina.pais LIKE 'Espaï¿½a'
 
 --02
 
@@ -122,3 +122,8 @@ WHERE cliente.codigo_empleado_rep_ventas IS NULL
 
 
 --13 
+
+SELECT *
+FROM empleado
+INNER JOIN empleado jefe ON empleado.codigo_empleado = jefe.codigo_jefe
+INNER JOIN empleado jefeJefe ON jefe.codigo_jefe = jefeJefe.codigo_empleado
