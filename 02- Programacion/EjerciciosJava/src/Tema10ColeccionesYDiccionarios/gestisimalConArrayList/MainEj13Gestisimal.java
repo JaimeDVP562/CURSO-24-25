@@ -9,20 +9,51 @@ import java.util.Scanner;
 public class MainEj13Gestisimal {
     public static void main(String[] args) throws Exception {
         // Tienda de discos
-        Gestisimal gestisimal=new Gestisimal();
+        Gestisimal gestisimal = new Gestisimal();
 
         // Propiedades
-        Scanner sc=new Scanner(System.in);int opcion=-1;
+        Scanner sc = new Scanner(System.in);
+        int opcion = -1;
 
         // Artículos iniciales
-        gestisimal.alta(new Articulo(1,"iPhone 27",900.0,1200.0,20));
+        gestisimal.alta(new Articulo(1, "iPhone 27", 900.0, 1200.0, 20));
 
         // Menú
-        do{System.out.println("COLECCIÓN DE DISCOS");System.out.println("===================\n");System.out.println("1. Listado");System.out.println("2. Nuevo disco");System.out.println("3. Modificar");System.out.println("4. Borrar");System.out.println("5. Salir");System.out.println();System.out.print("Introduzca la opción deseada: ");try{opcion=sc.nextInt();if(opcion<1||opcion>5){System.out.println("Error: Debe ser un valor entre 1 y 5");}}catch(Exception e){System.out.println("Error: opción introducida inválida, debe ser un número entero");}finally{sc.nextLine();}System.out.println();
+        do {
+            System.out.println("COLECCIÓN DE DISCOS");
+            System.out.println("===================\n");
+            System.out.println("1. Listado");
+            System.out.println("2. Nuevo disco");
+            System.out.println("3. Modificar");
+            System.out.println("4. Borrar");
+            System.out.println("5. Salir");
+            System.out.println();
+            System.out.print("Introduzca la opción deseada: ");
+            try {
+                opcion = sc.nextInt();
+                if (opcion < 1 || opcion > 5) {
+                    System.out.println("Error: Debe ser un valor entre 1 y 5");
+                }
+            } catch (Exception e) {
+                System.out.println("Error: opción introducida inválida, debe ser un número entero");
+            } finally {
+                sc.nextLine();
+            }
+            System.out.println();
 
-        try{switch(opcion){case 1->listarDiscos(gestisimal,sc);case 2->nuevoDisco(gestisimal,sc);case 3->modificarDisco(gestisimal,sc);case 4->borrarDisco(gestisimal,sc);}}catch(Exception e){System.out.println("Se ha producido un error: "+e.toString());}System.out.println("\n");
+            try {
+                switch (opcion) {
+                case 1 -> listarDiscos(gestisimal, sc);
+                case 2 -> nuevoDisco(gestisimal, sc);
+                case 3 -> modificarDisco(gestisimal, sc);
+                case 4 -> borrarDisco(gestisimal, sc);
+                }
+            } catch (Exception e) {
+                System.out.println("Se ha producido un error: " + e.toString());
+            }
+            System.out.println("\n");
 
-        }while(opcion!=5);
+        } while (opcion != 5);
 
         sc.close();
     }
