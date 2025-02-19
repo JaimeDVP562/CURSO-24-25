@@ -1,6 +1,6 @@
 // Jaime Gavilán Torrero
 
-package examenJGT;
+package examenesTerminados.examenJGT;
 
 import java.util.Random;
 import java.util.Scanner;

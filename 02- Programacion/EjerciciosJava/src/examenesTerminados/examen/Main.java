@@ -33,8 +33,8 @@ public class Main {
                 System.out.printf("Función esDivisor  : %s\n",
                                 MatLib.esDivisor(5, 25) && !MatLib.esDivisor(3, 25) ? "correcto" : "falso");
                 System.out.printf("Función esPrimo    : %s\n",
-                                MatLib.esPrimo(13) && !MatLib.esPrimo(4) && !MatLib.esPrimo(-5)
-                                                && !MatLib.esPrimo(1) && !MatLib.esPrimo(0) ? "correcto" : "falso");
+                                MatLib.esPrimo(13) && !MatLib.esPrimo(4) && !MatLib.esPrimo(-5) && !MatLib.esPrimo(1)
+                                                && !MatLib.esPrimo(0) ? "correcto" : "falso");
                 System.out.printf("Función esCuadradoPerfecto: %s\n",
                                 MatLib.esCuadradoPerfecto(25) && !MatLib.esCuadradoPerfecto(8) ? "correcto" : "falso");
 
