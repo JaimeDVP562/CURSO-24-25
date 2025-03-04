@@ -1,7 +1,8 @@
 {
     "java.format.settings.url": ".vscode/java-formatter.xml",
     "java.project.sourcePaths": [
-        "02- Programacion\\EjerciciosJava\\src"
+        "02- Programacion/EjerciciosJava/src",
+        "examen"
     ],
     "java.project.referencedLibraries": []
 }
