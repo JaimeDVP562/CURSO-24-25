@@ -1,0 +1,122 @@
+[
+  {
+    "nombre": "Juan Pérez",
+    "email": "juanperez@example.com",
+    "edad": 30,
+    "ciudad": "Madrid"
+  },
+  {
+    "nombre": "María López",
+    "email": "marialopez@example.com",
+    "edad": 25,
+    "ciudad": "Barcelona"
+  },
+  {
+    "nombre": "Carlos García",
+    "email": "carlosg@example.com",
+    "edad": 35,
+    "ciudad": "Sevilla"
+  },
+  {
+    "nombre": "Laura Fernández",
+    "email": "laura.fernandez@example.com",
+    "edad": 28,
+    "ciudad": "Valencia"
+  },
+  {
+    "nombre": "Diego Martínez",
+    "email": "diego.martinez@example.com",
+    "edad": 40,
+    "ciudad": "Bilbao"
+  },
+  {
+    "nombre": "Ana Torres",
+    "email": "ana.torres@example.com",
+    "edad": 22,
+    "ciudad": "Zaragoza"
+  },
+  {
+    "nombre": "Sergio Ramírez",
+    "email": "sergio.ramirez@example.com",
+    "edad": 33,
+    "ciudad": "Granada"
+  },
+  {
+    "nombre": "Beatriz Gómez",
+    "email": "beatriz.gomez@example.com",
+    "edad": 27,
+    "ciudad": "Alicante"
+  },
+  {
+    "nombre": "Roberto Díaz",
+    "email": "roberto.diaz@example.com",
+    "edad": 45,
+    "ciudad": "Córdoba"
+  },
+  {
+    "nombre": "Elena Muñoz",
+    "email": "elena.munoz@example.com",
+    "edad": 29,
+    "ciudad": "Málaga"
+  },
+  {
+    "nombre": "Pablo Herrera",
+    "email": "pablo.herrera@example.com",
+    "edad": 32,
+    "ciudad": "Santander"
+  },
+  {
+    "nombre": "Isabel Ruiz",
+    "email": "isabel.ruiz@example.com",
+    "edad": 26,
+    "ciudad": "Valladolid"
+  },
+  {
+    "nombre": "Fernando Castro",
+    "email": "fernando.castro@example.com",
+    "edad": 39,
+    "ciudad": "Oviedo"
+  },
+  {
+    "nombre": "Carmen Navarro",
+    "email": "carmen.navarro@example.com",
+    "edad": 31,
+    "ciudad": "Salamanca"
+  },
+  {
+    "nombre": "Alejandro Vega",
+    "email": "alejandro.vega@example.com",
+    "edad": 37,
+    "ciudad": "Toledo"
+  },
+  {
+    "nombre": "Lucía Morales",
+    "email": "lucia.morales@example.com",
+    "edad": 23,
+    "ciudad": "Murcia"
+  },
+  {
+    "nombre": "Javier Ortega",
+    "email": "javier.ortega@example.com",
+    "edad": 34,
+    "ciudad": "Pamplona"
+  },
+  {
+    "nombre": "Patricia Sánchez",
+    "email": "patricia.sanchez@example.com",
+    "edad": 41,
+    "ciudad": "Gijón"
+  },
+  {
+    "nombre": "Hugo Méndez",
+    "email": "hugo.mendez@example.com",
+    "edad": 36,
+    "ciudad": "Burgos"
+  },
+  {
+    "nombre": "Sofía Ríos",
+    "email": "sofia.rios@example.com",
+    "edad": 24,
+    "ciudad": "San Sebastián"
+  }
+]
